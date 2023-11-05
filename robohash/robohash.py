@@ -194,6 +194,6 @@ class Robohash(object):
                 bg.paste(roboimg,(0,0),roboimg)
                 roboimg = bg
 
-        self.img = roboimg.resize((sizex,sizey),Image.ANTIALIAS)
+        self.img = roboimg.resize((sizex,sizey),Image.Resampling.LANCZOS)
         self.format = format
 
